@@ -13,6 +13,11 @@ app.use(express.urlencoded({extended : true, limit : '16kb'}))
 
 import dataRoute from './routes/data.route.js'
 app.use('/api/v1', dataRoute)
+app.get('/',(req, res) => {
+    console.log("OK good")
+    res.send("bye bye")
+})
+
 
 
 export {app}

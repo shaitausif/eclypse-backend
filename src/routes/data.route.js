@@ -8,4 +8,5 @@ router.route('/images').get(getProductImages)
 router.route('/text-data').get(getTextData)
 
 
+
 export default router;
