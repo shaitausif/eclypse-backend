@@ -7,7 +7,7 @@ app.use(cors({
 }))
 
 // here we're configuring the express to allow json requests with a certain limit
-app.use(express.static('dist'))
+
 app.use(express.json({limit: "16kb"}))
 app.use(express.urlencoded({extended : true, limit : '16kb'}))
 
