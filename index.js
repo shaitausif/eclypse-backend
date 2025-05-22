@@ -1,8 +1,8 @@
 // api/index.js
 import dotenv from 'dotenv';
 
-import { app } from '../src/app.js'; // Correctly import the named export 'app'
-import connectDB from '../src/db/index.js'
+import { app } from './app.js'; // Correctly import the named export 'app'
+import connectDB from './src/db/index.js'
 
 // Load environment variables
 dotenv.config();
