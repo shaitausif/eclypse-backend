@@ -10,7 +10,9 @@ dotenv.config({
 
 
 // MONGODB returns a promise when we connect to it
-   
-    app.listen(process.env.PORT || 8000, ()=> {
+   if(process.env.NODE_ENV !== "production"){
+     app.listen(process.env.PORT || 8000, ()=> {
         console.log(`Server is running at http://localhost:${process.env.PORT}`)                           
     })
+   }
+    
